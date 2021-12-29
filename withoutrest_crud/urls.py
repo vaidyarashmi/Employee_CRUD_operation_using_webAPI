@@ -20,6 +20,4 @@ from django.views.decorators.csrf import csrf_exempt
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/',csrf_exempt(views.EmployeeCRUD_CBV.as_view())),
-    # path('get_records/<int:id>',csrf_exempt(views.EmployeeDetailsCBV.as_view())),
-    # path('get_all_records', csrf_exempt(views.AllEmployeeListCBV.as_view()))
 ]
